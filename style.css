@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.top {
+    background-image: url("heading.jpeg");
+    background-size: cover;
+    padding-bottom: 720px;
+    color: #fff;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+.left-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+
+.nav-heading {
+    animation: slideLeft 1s ease forwards;
+}
+
+
+.h1 {
+    margin-top: 200px;
+    font-size: 45px;
+    color: #fff;
+    animation: slideBottom 1s ease forwards;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+
+.logo img {
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.links a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    font-size: 25px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.heading {
+    margin-left: 80px;
+    margin-top: 60px;
+    font-weight: 600;
+    color: #000;
+}
+
+span {
+    color: #0ef;
+    font-size: 55px;
+}
+
+.first-hr {
+    margin-top: 10px;
+    width: 580px;
+    height: 2px;
+    background-color: rgb(52, 129, 135);
+    border: none;
+}
+
+.quote {
+    margin-top: 10px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 200;
+    font-size: 25px;
+    color: #fff;
+    animation: slideRight 1s ease forwards;
+}
+
+
+.school-sci {
+    background-color: #001f3d;
+}
+
+button {
+    height: 55px;
+    width: 200px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(#ece7a5, yellow);
+    background-color: yellow;
+    color: blue;
+    font-size: 20px;
+    font-weight: 600;
+    animation: slideTop 1s ease forwards;
+}
+
+.about {
+    background-color: #001f3d;
+    color: white;
+    height: 560px;
+    padding-top: 60px;
+    padding-left: 100px;
+    font-size: 30px;
+    display: flex;
+    gap: 25rem;
+}
+
+.about img {
+    height: 450px;
+    width: 880px;
+    border: 5px solid #093868;
+    border-radius: 15px;
+}
+
+.hr-2 {
+    margin-top: 3px;
+    width: 388px;
+    height: 2px;
+    background-color: rgb(98, 98, 27);
+    margin-bottom: 10px;
+    border: none;
+}
+
+.heading-2 {
+    margin-top: 20px;
+}
+
+.hr-3 {
+    width: 350px;
+}
+
+.about-school {
+    height: 200px;
+    width: 500px;
+    font-size: 25px;
+}
+
+
+.heading-sci {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 350px;
+    text-align: center;
+    position: relative;
+    bottom: 240px;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #000;
+}
+
+.css {
+    position: relative;
+    top: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.classes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.class {
+    text-align: center;
+    height: 150px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    margin-top: 60px;
+    transition: all 0.3s, linear 0.3s;
+}
+
+.class:hover {
+    transform: translateY(-50px);
+}
+
+
+.text-class {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.hr-4 {
+    margin-top: 3px;
+    width: 250px;
+    height: 2px;
+    background-color: #000;
+    margin-bottom: 10px;
+    border: none;
+    position: relative;
+    left: 20px;
+}
+
+.class1 {
+    background-color: #FF7F11;
+}
+
+.class2 {
+    background-color: #759AAB;
+}
+
+.class3 {
+    background-color: #CEB992;
+}
+
+.class4 {
+    background-color: #8DE969;
+}
+
+.teacher-heading {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.teacher-img img {
+    height: 350px;
+    width: 400px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.teachers {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.name {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.teacher {
+    height: 450px;
+    width: 470px;
+    margin: 0px 50px 50px 50px;
+    border-radius: 15px;
+    border: 3px solid white;
+}
+
+.sub {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.head-teacher {
+    font-size: 55px;
+    margin-top: 50px;
+}
+
+.head-contributors {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.head-contributors h2 {
+    font-size: 55px;
+}
+
+.contributor {
+    height: 450px;
+    width: 470px;
+    margin: 0px 50px 50px 50px;
+    border-radius: 15px;
+    border: 3px solid white;
+}
+
+.cont-img img {
+    height: 350px;
+    width: 400px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.contributors {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.notice-board {
+    height: 200px;
+    width: 100%;
+    background-color: #001f3d;
+    color: black;
+    padding-bottom: 100px;
+}
+
+.head-board {
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 60px;
+    padding-top: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.hr-5 {
+    height: 2px;
+    width: 20px;
+    transform: rotate(90deg);
+    position: relative;
+    top: 10px;
+}
+
+.notices {
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    font-size: 25px;
+}
+
+.gallery {
+    background-color: #001f3d;
+}
+
+.head-gallery h2 {
+    font-size: 55px;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.photo {
+    height: 380px;
+    width: 500px;
+    margin: 0px 50px 50px 50px;
+    border-radius: 15px;
+    border: 3px solid white;
+}
+
+.photo-img img {
+    height: 350px;
+    width: 450px;
+    margin-top: 10px;
+    margin-left: 23px;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.contact {
+    background-color: #001f3d;
+}
+
+.form {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    gap: 20rem;
+}
+
+.head-contact h2 {
+    font-size: 55px;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.contact-list {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+li {
+    margin-top: 10px;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.contact-form form {
+    position: relative;
+}
+
+.contact-form form input,
+form textarea {
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: #555557;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 220px;
+    font-family: 'Arial';
+}
+
+.contact-form form .send {
+    display: inline-block;
+    padding: 14px 60px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+    margin-bottom: 70px;
+}
+
+.contact-form form .send:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+        0 0 200px cyan;
+}
+
+.last {
+    text-align: center;
+    background-color: #131A22;
+    height: 100px;
+}
+
+.last-text {
+    color: #fff;
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+.by {
+    color: #fff;
+    font-size: 15px;
+    text-align: right;
+    padding-right: 40px;
+    padding-top: 5px;
+}
