@@ -5,13 +5,111 @@
     scroll-behavior: smooth;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .em {
     text-decoration: none;
     color: #0ef;
 }
 
+
+@media (max-width: 768px) {
+
+    .top {
+        padding-right: 2100px;
+    }
+
+
+    .navbar {
+        width: 300px
+    }
+
+    .cont-img {
+        width: 2000px;
+    }
+
+    .teacher-img {
+        width: 2000px;
+    }
+
+    .photo-img {
+        width: 2000px;
+    }
+
+    .top {
+        width: 100vw;
+    }
+
+    .links a {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    .about img {
+        position: relative;
+        bottom: 350px;
+        height: 450px;
+        width: 1000px;
+        border: 5px solid #093868;
+        border-radius: 15px;
+        left: 200px;
+    }
+
+    .h1 {
+        font-size: 32px;
+        margin-top: 120px;
+    }
+
+    span {
+        font-size: 36px;
+    }
+
+    .heading {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .first-hr {
+        width: 100%;
+    }
+
+    .about-heading,
+    .head-teacher,
+    .head-gallery h2,
+    .head-contact h2,
+    .head-board {
+        font-size: 36px;
+    }
+
+    .notice-board {
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .notices {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .classes {
+        flex-wrap: wrap;
+    }
+
+    .last {
+        width: 1750px;
+    }
+}
+
+
 body {
+    height: 100vh;
     font-family: 'Arial', sans-serif;
+    background-color: #001f3d;
 }
 
 .top {
@@ -176,7 +274,7 @@ button {
     padding-left: 100px;
     font-size: 30px;
     display: flex;
-    gap: 25rem;
+    flex-wrap: wrap;
 }
 
 .about img {
@@ -184,6 +282,7 @@ button {
     width: 880px;
     border: 5px solid #093868;
     border-radius: 15px;
+    margin-left: 400px;
 }
 
 .hr-2 {
