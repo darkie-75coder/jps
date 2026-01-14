@@ -12,23 +12,40 @@
 </head>
 
 <body>
-    <div class="top">
-        <nav class="navbar" id="home">
-            <div class="left-nav">
+    <nav class="navbar">
+        <ul class="sidebar">
+            <li onclick="hidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="27px" fill="#000">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#class">Classes</a></li>
+            <li><a href="#teachers">Teachers</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <ul>
+            <li>
                 <div class="logo"><img src="school-logo.jpeg" alt="school-logo"></div>
                 <h2 class="nav-heading">Jagdish Public School</h2>
-            </div>
+            </li>
+            <li><a class="hidden" href="#home">Home</a></li>
+            <li><a class="hidden" href="#about">About</a></li>
+            <li><a class="hidden" href="#class">Classes</a></li>
+            <li><a class="hidden" href="#teachers">Teachers</a></li>
+            <li><a class="hidden" href="#gallery">Gallery</a></li>
+            <li><a class="hidden" href="#contact">Contact Us</a></li>
+            <li><a onclick="showsidebar()" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28px"
+                        viewBox="0 -960 960 960" width="28px" fill="#000">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg></a></li>
+        </ul>
+    </nav>
 
-            <div class="links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#class">Classes</a>
-                <a href="#teachers">Teachers</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#contact">Contact Us</a>
-            </div>
-        </nav>
-
+    <div class="top" id="home">
         <section class="heading">
             <h1 class="h1">Welcome to <br><span>Jagdish Public School</span></h1>
             <hr class="first-hr">
@@ -259,6 +276,7 @@
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
