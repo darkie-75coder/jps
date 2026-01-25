@@ -7,3 +7,7 @@ function showsidebar() {
 function hidebar() {
     sidebar.style.display = "none";
 }
+
+function gotoAbout() {
+    window.location.href = "#about";
+}
