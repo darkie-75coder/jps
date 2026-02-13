@@ -10,11 +10,14 @@
     color: #0ef;
 }
 
+.hidon {
+    display: none;
+}
+
 body {
     min-height: 100vh;
-    min-width: 100vw;
     font-family: 'Arial', sans-serif;
-    background-color: #001f3d;
+    background: linear-gradient(45deg, red, blue);
 }
 
 .navbar {
@@ -26,7 +29,7 @@ body {
 }
 
 .navbar ul {
-    background: #fff;
+    background: linear-gradient(45deg, red, blue);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -51,6 +54,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    color: #fff;
 }
 
 .top {
@@ -58,36 +62,11 @@ body {
     background-size: cover;
     padding-bottom: 720px;
     padding-top: 70px;
-    width: 100vw;
+    width: 100%;
     color: #000;
 }
 
-.hidon {
-    display: none;
-}
-
-@media (max-width: 1250px) {
-    .hidden {
-        display: none;
-    }
-
-    .hidon {
-        display: block;
-    }
-}
-
-@media (max-width: 600px) {
-    .hidden {
-        display: none;
-    }
-
-    .navbar .sidebar {
-        width: 100%;
-    }
-}
-
 .navbar {
-    background: #fff;
     color: #000;
 }
 
@@ -152,12 +131,12 @@ a {
 }
 
 a {
-    color: #000;
+    color: #fff;
 }
 
 .links a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     margin-left: 20px;
     margin-right: 20px;
     font-size: 25px;
@@ -203,11 +182,7 @@ button p {
 }
 
 .nav-heading {
-    width: 100%;
-}
-
-.school-sci {
-    background-color: #001f3d;
+    font-size: 1.5vw;
 }
 
 button {
@@ -225,7 +200,6 @@ button {
 }
 
 .about {
-    background-color: #001f3d;
     color: white;
     height: 560px;
     margin-top: 50px;
@@ -429,7 +403,6 @@ button {
 .notice-board {
     height: 200px;
     width: 100%;
-    background-color: #001f3d;
     color: black;
     padding-bottom: 100px;
 }
@@ -458,9 +431,6 @@ button {
     font-size: 25px;
 }
 
-.gallery {
-    background-color: #001f3d;
-}
 
 .head-gallery h2 {
     font-size: 55px;
@@ -489,11 +459,6 @@ button {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-}
-
-
-.contact {
-    background-color: #001f3d;
 }
 
 .form {
@@ -570,7 +535,6 @@ form textarea {
 
 .last {
     text-align: center;
-    background-color: #131A22;
     height: 100px;
 }
 
@@ -607,9 +571,18 @@ form textarea {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 2rem;
     backdrop-filter: blur(20px);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar li {
+    width: 100%;
+    text-align: center;
+    margin: 30px;
+}
+
+.sidebar li a {
+    text-align: center;
 }
 
 .school-img {
@@ -631,4 +604,22 @@ form textarea {
     }
 }
 
-@media (max-width: 770px) {}
+@media (max-width: 1250px) {
+    .hidon {
+        display: block;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .nav-heading {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-heading {
+        font-size: 3.5vw;
+    }
+}
