@@ -20,6 +20,10 @@ body {
     background: linear-gradient(45deg, red, blue);
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .navbar {
     background: #fff;
     height: 60px;
@@ -643,3 +647,4 @@ form textarea {
         font-size: 3.5vw;
     }
 }
+
