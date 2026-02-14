@@ -7,17 +7,11 @@
 
 .em {
     text-decoration: none;
-    color: #0ef;
 }
 
 .hidon {
     display: none;
 }
-
-.VZex5pD5RuUNuJPN0vVu {
-    display: none !important;
-}
-
 
 body {
     min-height: 100vh;
@@ -26,7 +20,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .navbar {
@@ -165,8 +159,33 @@ a {
 }
 
 span {
-    color: #0ef;
+    background: linear-gradient(90deg,
+            #ff512f,
+            #f09819,
+            #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 55px;
+}
+
+i {
+    background: linear-gradient(90deg,
+            #ff512f,
+            #f09819,
+            #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.expl {
+    background: linear-gradient(90deg,
+            #ff512f,
+            #f09819,
+            #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 20px;
 }
 
 .first-hr {
@@ -652,6 +671,3 @@ form textarea {
         font-size: 3.5vw;
     }
 }
-
-
-
