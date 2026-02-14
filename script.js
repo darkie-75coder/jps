@@ -1,7 +1,7 @@
 const sidebar = document.querySelector(".sidebar")
 
 function showsidebar() {
-    sidebar.style.display = "block";
+    sidebar.style.display = "flex";
 }
 
 function hidebar() {
@@ -11,3 +11,4 @@ function hidebar() {
 function gotoAbout() {
     window.location.href = "#about";
 }
+
