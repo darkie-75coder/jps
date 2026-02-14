@@ -14,6 +14,11 @@
     display: none;
 }
 
+.g_U3r8dd_7sgVHnNnVpT {
+  display: none !important;
+}
+
+
 body {
     min-height: 100vh;
     font-family: 'Arial', sans-serif;
@@ -647,4 +652,5 @@ form textarea {
         font-size: 3.5vw;
     }
 }
+
 
