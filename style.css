@@ -553,7 +553,7 @@ form textarea {
 .contact-form form .send {
     display: inline-block;
     padding: 14px 60px;
-    background: #0ef;
+    background: linear-gradient(45deg, red, blue);
     border-radius: 40px;
     font-size: 18px;
     color: #081b29;
@@ -698,4 +698,5 @@ form textarea {
         display: none;
     }
 }
+
 
