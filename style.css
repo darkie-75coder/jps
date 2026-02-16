@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 .em {
@@ -42,7 +43,7 @@ body {
 .navbar ul li {
     display: flex;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.3vw;
     margin-right: 20px;
 }
 
@@ -360,6 +361,7 @@ button {
     width: 400px;
     margin-left: 30px;
     margin-top: 10px;
+    border-radius: 25px;
 }
 
 .teachers {
@@ -420,6 +422,7 @@ button {
     width: 400px;
     margin-left: 30px;
     margin-top: 10px;
+    border-radius: 25px;
 }
 
 .contributors {
@@ -455,6 +458,8 @@ button {
 .notices {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1.5vw;
     color: #fff;
     font-size: 25px;
 }
@@ -474,13 +479,15 @@ button {
     margin: 0px 50px 50px 50px;
     border-radius: 15px;
     border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .photo-img img {
     height: 350px;
     width: 450px;
-    margin-top: 10px;
-    margin-left: 23px;
+    border-radius: 25px;
 }
 
 .photos {
@@ -491,9 +498,8 @@ button {
 
 .form {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 60px;
-    gap: 20rem;
 }
 
 .head-contact h2 {
@@ -507,6 +513,11 @@ button {
     color: #fff;
     font-size: 20px;
     margin-top: 50px;
+    width: 100%;
+}
+
+.contact-list li {
+    width: 100%;
 }
 
 li {
@@ -526,7 +537,7 @@ form textarea {
     width: 90%;
     padding: 18px;
     background: #555557;
-    color: #000000;
+    color: #fff;
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
@@ -640,6 +651,7 @@ form textarea {
 @media (max-width: 1200px) {
     .about {
         padding-bottom: 1000px;
+        gap: 3.4rem;
     }
 
     .about-school {
@@ -652,22 +664,35 @@ form textarea {
     }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1300px) {
+    .navbar ul li {
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar ul li {
+        font-size: 1.5vw;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1800px) {
+    .nav-heading {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .nav-heading {
+        font-size: 3.5vw;
+    }
+
     .hidon {
         display: block;
     }
 
     .hidden {
         display: none;
-    }
-
-    .nav-heading {
-        font-size: 2.5vw;
-    }
-}
-
-@media (max-width: 800px) {
-    .nav-heading {
-        font-size: 3.5vw;
     }
 }
